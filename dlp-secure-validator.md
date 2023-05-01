@@ -9,6 +9,7 @@ sequenceDiagram
     FleetIDEA->>PluginAPI: Request plugin
     PluginAPI->>SecureAccessPlugin: Load plugin
     SecureAccessPlugin->>PluginAPI: Register plugin
+    SecureAccessPlugin->>PluginAPI: Authenticate plugin(license)
     PluginAPI->>FleetIDEA: Plugin ready
 
     loop File analysis
