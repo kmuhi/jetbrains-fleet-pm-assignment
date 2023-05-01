@@ -17,7 +17,6 @@ sequenceDiagram
         SecureAccessPlugin->>SecureAccessPlugin: DLP analytics
         SecureAccessPlugin->>SecureAccessPlugin: Check sensitive information leaks
         SecureAccessPlugin->>FleetIDEA: Report issues and suggestions
-        SecureAccessPlugin<<-FleetIdeaRenderEngine: Renders results for end user
-        
+        SecureAccessPlugin->>FleetIdeaRenderEngine: Renders results for end user
     end
 ```
