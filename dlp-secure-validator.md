@@ -1,11 +1,11 @@
 ```mermaid
 
 sequenceDiagram
+    participant FleetIdeaRenderEngine as Fleet Render Engine
     participant FleetIDEA as Fleet IDEA
     participant PluginAPI as Fleet Plugin API
     participant SecureAccessPlugin as Secure-Access-Plugin
-    participant FleetIdeaRenderEngine as Fleet Render Engine
-
+   
     FleetIDEA->>PluginAPI: Request plugin
     PluginAPI->>SecureAccessPlugin: Load plugin
     SecureAccessPlugin->>PluginAPI: Register plugin
