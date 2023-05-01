@@ -10,6 +10,7 @@ sequenceDiagram
     PluginAPI->>SecureAccessPlugin: Load plugin
     SecureAccessPlugin->>PluginAPI: Register plugin
     PluginAPI->>FleetIDEA: Plugin ready
+    PluginAPI->>FleetIdeaRenderEngine
 
     loop File analysis
         FleetIDEA->>SecureAccessPlugin: Send opened file
