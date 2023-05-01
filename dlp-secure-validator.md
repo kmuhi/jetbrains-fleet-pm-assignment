@@ -5,12 +5,13 @@ sequenceDiagram
     participant FleetIDEA as Fleet IDEA
     participant PluginAPI as Fleet Plugin API
     participant SecureAccessPlugin as Secure-Access-Plugin
-   
+    
+    PluginAPI->>FleetIdeaRenderEngine
     FleetIDEA->>PluginAPI: Request plugin
     PluginAPI->>SecureAccessPlugin: Load plugin
     SecureAccessPlugin->>PluginAPI: Register plugin
     PluginAPI->>FleetIDEA: Plugin ready
-    PluginAPI->>FleetIdeaRenderEngine
+    
 
     loop File analysis
         FleetIDEA->>SecureAccessPlugin: Send opened file
