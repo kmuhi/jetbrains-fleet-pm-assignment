@@ -1,3 +1,5 @@
+
+```mermaid
 sequenceDiagram
     participant FleetIDEA as Fleet IDEA
     participant PluginAPI as Fleet Plugin API
@@ -13,3 +15,4 @@ sequenceDiagram
         SecurityPlugin->>SecurityPlugin: Analyze code for security leaks
         SecurityPlugin->>FleetIDEA: Suggest security improvements
     end
+```
